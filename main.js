@@ -1,7 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
-import { enviromentsComponent } from './src/concepts/01-enviroments';
+import { enviromentsComponent, callbacksComponent } from './src/concepts/index';
 
 
 document.querySelector('#app').innerHTML = `
@@ -20,8 +20,8 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
+
 const element = document.querySelector('.card');
 
 enviromentsComponent(element);
-
-console.log('Hola Mundo');
+callbacksComponent( element );
